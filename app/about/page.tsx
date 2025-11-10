@@ -21,6 +21,12 @@ Kenapa usaha ini saya beri nama Kuphi? Sebenernya ini hanya karena saya suka men
             className="mx-auto h-auto w-auto"
           />
         </div>
+
+      {/* Location */}
+      <section className="max-w-4xl mx-auto px-4 py-6 text-center">
+        <h2 className="font-playfair text-2xl text-amber-900 mb-2">Lokasi</h2>
+        <p className="font-open-sans text-amber-900">Jl Gading 9 No 12, Komplek TNI AL Kelapa Gading Barat</p>
+      </section>
       </section>
 
       {/* Decorative Coffee Beans Background */}
