@@ -86,7 +86,7 @@ export default function Contact() {
           {/* Grab order link */}
           <div className="mt-4">
             <a
-              href="https://r.grab.com/g/2-1-6-C7T2JPDHEKTADA"
+              href="https://r.grab.com/g/6-20251110_163205_5ab3a9d630564653a49c2263f6a5dd5d_MEXMPS-6-C7T2JPDHEKTADA"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 bg-[#6b3a2a] hover:opacity-90 text-amber-50 px-3 py-2 rounded-lg"
