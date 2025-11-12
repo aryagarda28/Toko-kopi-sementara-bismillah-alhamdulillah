@@ -82,32 +82,28 @@ export default function Contact() {
             <p>TikTok: @sheissyha</p>
             <p>Instagram: @kuphicoffee_</p>
           </div>
-
-          {/* Grab order link */}
-          <div className="mt-4">
-            <a
-              href="https://r.grab.com/g/6-20251110_163205_5ab3a9d630564653a49c2263f6a5dd5d_MEXMPS-6-C7T2JPDHEKTADA"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 bg-[#6b3a2a] hover:opacity-90 text-amber-50 px-3 py-2 rounded-lg"
-            >
-              <img
-                src="/grab-logo.png"
-                alt="Grab"
-                className="h-6 w-auto"
-              />
-              <span className="font-open-sans font-semibold text-sm">Pesan di Grab</span>
-            </a>
-          </div>
-
         </div>
 
         {/* Location */}
         <div className="mt-8 text-center">
           <h2 className="font-playfair text-2xl text-amber-900 mb-4">Lokasi</h2>
           <p className="font-open-sans text-amber-900">
-            Jl Gading 9 No 12, Komplek TNI AL Kelapa Gading Barat
+            Jl. Gading 12 No. 12, Komplek TNI AL, Kelapa Gading Barat, Jakarta Utara 14240
           </p>
+
+          <div className="mt-4">
+            <div className="w-full rounded-lg overflow-hidden shadow-md max-w-2xl mx-auto">
+              <iframe
+                title="Kuphi Location"
+                src="https://www.google.com/maps?q=Jl.+Gading+12+No.+12,+Komplek+TNI+AL,+Kelapa+Gading+Barat,+Jakarta+Utara+14240&output=embed"
+                className="w-full h-[360px]"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </div>
+          </div>
         </div>
       </section>
     </main>
