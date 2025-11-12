@@ -29,6 +29,18 @@ export default function About() {
           </div>
         </section>
 
+      {/* Business profile card */}
+      <section className="max-w-4xl mx-auto px-4 py-8">
+        <div className="bg-amber-50/80 rounded-lg shadow-md p-6 md:p-8 border border-amber-100">
+          <h2 className="font-playfair text-2xl text-amber-900 mb-3">Profil Usaha</h2>
+          <p className="font-open-sans text-amber-900 leading-relaxed whitespace-pre-line">
+            {`Awal saya mendirikan usaha ini dikarenakan saya terpaksa resign setelah selama 6 tahun saya bekerja di bank karena mengalami cedera meniskus yang mengharuskan saya menjalani operasi. Selama masa pemulihan muncul ide untuk membangun usaha ini. Berawal dari kecintaan saya terhadap kopi dan kebiasaan meracik sendiri, saya akhirnya memberanikan diri membuka usaha ini.
+
+Nama “Kuphi” sendiri berasal dari cara saya menyebut kata ‘kopi’ saat bercanda dengan teman-teman di kantor. Karena terdengar unik dan khas, akhirnya saya memilih nama itu untuk brand saya. Saat ini usaha masih dijalankan secara online dari rumah.`}
+          </p>
+        </div>
+      </section>
+
       {/* Decorative Coffee Beans Background */}
       <div className="relative h-64 opacity-20">
         <Image
