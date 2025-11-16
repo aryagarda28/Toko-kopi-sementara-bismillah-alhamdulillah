@@ -14,24 +14,23 @@ export default function Navbar() {
     { label: "Home", href: "/" },
     { label: "About", href: "/about" },
     { label: "Menu", href: "/menu" },
+    { label: "Testimonials", href: "/testimonials" },
     { label: "Services", href: "/services" },
     { label: "Gallery", href: "/gallery" },
     { label: "Contact", href: "/contact" },
   ]
 
   return (
-    <nav className="bg-white sticky top-0 z-50 shadow-md border-b border-gray-200">
-      <div className="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
-
-        {/* Logo — Besar & tetap proporsional, navbar tetap ramping */}
+    <nav className="bg-amber-900 sticky top-0 z-50 shadow-lg">
+      <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+        {/* Logo */}
         <Link href="/" className="flex items-center">
           <Image
-            src="/logo-removebg-preview.png"
-            alt="Kuphi Coffee Logo"
-            width={300}            // Memperbesar logo
-            height={300}
-            className="h-35 w-auto object-contain"  // h-20 = tinggi 80px, tetap slim dan proporsional
-            priority
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-lyG0vluVarVWf2Ee5N48UynXZAaPEF.jpg"
+            alt="Kuphicoffee Logo"
+            width={60}
+            height={60}
+            className="h-16 w-auto object-contain"
           />
         </Link>
 
@@ -41,17 +40,17 @@ export default function Navbar() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-[#3b2f2f] hover:text-[#2a1f1f] transition-colors duration-300 font-medium text-sm"
+              className="text-amber-50 hover:text-amber-200 transition-colors duration-300 font-open-sans font-medium text-sm"
             >
               {link.label}
             </Link>
           ))}
         </div>
 
-        {/* Mobile Button */}
+        {/* Mobile Menu Button */}
         <button
           onClick={toggleMenu}
-          className="md:hidden text-[#3b2f2f]"
+          className="md:hidden text-amber-50 hover:text-amber-200 transition-colors"
           aria-label="Toggle menu"
         >
           {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -60,14 +59,14 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-white border-t border-gray-300">
-          <div className="px-4 py-3 space-y-2">
+        <div className="md:hidden bg-amber-900 border-t border-amber-800">
+          <div className="px-4 py-4 space-y-3">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
+                className="block text-amber-50 hover:text-amber-200 transition-colors py-2 font-open-sans"
                 onClick={() => setIsOpen(false)}
-                className="block text-[#3b2f2f] hover:text-[#2a1f1f] py-1"
               >
                 {link.label}
               </Link>

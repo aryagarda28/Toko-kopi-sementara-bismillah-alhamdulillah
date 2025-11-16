@@ -6,7 +6,6 @@ export default function Menu() {
       price: "Rp10.000",
       image:
         "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-11-06%20at%2020.57.20_7f9a58b2-3Fl5d5LXIzSgpRXsxBYFAaMM80nqTg.jpg",
-      bestSeller: true,
     },
     {
       name: "Americano",
@@ -44,7 +43,6 @@ export default function Menu() {
       price: "Rp12.000",
       image:
         "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-11-06%20at%2020.57.19_423afb18-VwgQqzLC1QqVSfPrZeO2Q5PYYlj1Sq.jpg",
-      bestSeller: true,
     },
     {
       name: "Matcha Wave",
@@ -52,16 +50,13 @@ export default function Menu() {
       price: "Rp12.000",
       image:
         "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-11-06%20at%2020.57.19_a202e951-DJfiDVSHLB7OuiSv1tBfsRUIVOW94X.jpg",
-      bestSeller: true,
     },
   ]
 
   return (
     <main className="min-h-screen bg-amber-50">
       <section className="max-w-6xl mx-auto px-4 py-20">
-        <h1 className="font-playfair text-5xl md:text-6xl text-center text-amber-900 mb-4 text-balance">
-          Our Menu
-        </h1>
+        <h1 className="font-playfair text-5xl md:text-6xl text-center text-amber-900 mb-4 text-balance">Our Menu</h1>
         <p className="text-center text-amber-800 text-lg mb-16">
           Discover our signature coffee and specialty beverages
         </p>
@@ -76,9 +71,7 @@ export default function Menu() {
 
         {/* Coffee Section */}
         <div className="mb-20">
-          <h2 className="font-playfair text-4xl text-amber-900 mb-12 border-b-2 border-amber-800 pb-4">
-            Coffee
-          </h2>
+          <h2 className="font-playfair text-4xl text-amber-900 mb-12 border-b-2 border-amber-800 pb-4">Coffee</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {coffeeItems.map((item) => (
               <div
@@ -92,12 +85,6 @@ export default function Menu() {
                     alt={item.name}
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                   />
-                  {/* Tampilan Label Best Seller */}
-                  {item.bestSeller && (
-                    <div className="absolute top-0 right-0 bg-red-700 text-white text-xs font-bold px-3 py-1 rounded-bl-lg z-10 shadow-sm">
-                      BEST SELLER
-                    </div>
-                  )}
                 </div>
 
                 {/* Menu Item Details */}
@@ -105,9 +92,7 @@ export default function Menu() {
                   <h3 className="font-playfair text-2xl text-amber-900 mb-2">{item.name}</h3>
                   <p className="text-amber-700 text-sm mb-4">{item.description}</p>
                   <div className="flex justify-between items-center">
-                    <span className="font-open-sans text-lg font-semibold text-amber-900">
-                      {item.price}
-                    </span>
+                    <span className="font-open-sans text-lg font-semibold text-amber-900">{item.price}</span>
                     <button className="bg-amber-900 text-amber-50 px-4 py-2 rounded-md hover:bg-amber-800 transition-colors text-sm font-semibold">
                       Order
                     </button>
@@ -120,9 +105,7 @@ export default function Menu() {
 
         {/* Non-Coffee Section */}
         <div>
-          <h2 className="font-playfair text-4xl text-amber-900 mb-12 border-b-2 border-amber-800 pb-4">
-            Non Coffee
-          </h2>
+          <h2 className="font-playfair text-4xl text-amber-900 mb-12 border-b-2 border-amber-800 pb-4">Non Coffee</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {nonCoffeeItems.map((item) => (
               <div
@@ -136,12 +119,6 @@ export default function Menu() {
                     alt={item.name}
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                   />
-                  {/* Tampilan Label Best Seller */}
-                  {item.bestSeller && (
-                    <div className="absolute top-0 right-0 bg-red-700 text-white text-xs font-bold px-3 py-1 rounded-bl-lg z-10 shadow-sm">
-                      BEST SELLER
-                    </div>
-                  )}
                 </div>
 
                 {/* Menu Item Details */}
@@ -149,9 +126,7 @@ export default function Menu() {
                   <h3 className="font-playfair text-2xl text-amber-900 mb-2">{item.name}</h3>
                   <p className="text-amber-700 text-sm mb-4">{item.description}</p>
                   <div className="flex justify-between items-center">
-                    <span className="font-open-sans text-lg font-semibold text-amber-900">
-                      {item.price}
-                    </span>
+                    <span className="font-open-sans text-lg font-semibold text-amber-900">{item.price}</span>
                     <button className="bg-amber-900 text-amber-50 px-4 py-2 rounded-md hover:bg-amber-800 transition-colors text-sm font-semibold">
                       Order
                     </button>

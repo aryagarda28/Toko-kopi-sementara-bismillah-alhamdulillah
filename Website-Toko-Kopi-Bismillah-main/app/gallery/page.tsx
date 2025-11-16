@@ -7,21 +7,9 @@ export default function Gallery() {
       alt: "Kuphicoffee Logo",
     },
     {
-      src: "galeri 2.jpg",
-      alt: "",
+      src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/coffee-qDDnjyQFqu4EU5aJnd5hbDOH3jb5oS.jpg",
+      alt: "Coffee Beans",
     },
-    {
-      src: "galeri 3.jpg",
-      alt: "",
-    },
-    {
-      src: "galeri 4.jpg",
-      alt: "",
-    },
-    {
-      src: "galeri 5.jpg",
-      alt: "",
-    }
   ]
 
   return (
