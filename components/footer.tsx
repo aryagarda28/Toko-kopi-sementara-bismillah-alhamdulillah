@@ -51,6 +51,31 @@ export default function Footer() {
             </text>
           </svg>
         </a>
+
+        {/* Shopee Food */}
+        <a
+          href="https://shopee.co.id/universal-link/now-food/shop/22502290?deep_and_deferred=1&shareChannel=whatsapp"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-amber-800 hover:bg-amber-700 transition-colors"
+          aria-label="Shopee Food Kuphi Coffee"
+        >
+          <svg className="w-6 h-6" viewBox="0 0 24 24">
+            {/* Lingkaran oranye khas Shopee (#EE4D2D) */}
+            <circle cx="12" cy="12" r="10" fill="#EE4D2D" />
+            <text
+              x="12"
+              y="16"
+              textAnchor="middle"
+              fontSize="10"
+              fontFamily="Arial, Helvetica, sans-serif"
+              fontWeight="bold"
+              fill="#ffffff"
+            >
+              S
+            </text>
+          </svg>
+        </a>
       </div>
 
       <p className="text-amber-100 font-open-sans text-sm">
